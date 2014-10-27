@@ -20,7 +20,7 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'pg'
 
-group :test do
+group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'shoulda-matchers'
@@ -29,12 +29,14 @@ group :test do
   gem 'launchy'
   gem 'capybara'
   gem 'dotenv-rails'
+  gem 'letter_opener'
+  gem 'rack-mini-profiler'
+  gem 'capybara-email'
+  gem 'email_spec'
 end
 
 group :development do
   gem 'spring'
-  gem 'letter_opener'
-  gem 'rack-mini-profiler'
 end
 
 gem 'rails_12factor', group: :production

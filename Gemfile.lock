@@ -37,6 +37,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara-email (2.4.0)
+      capybara (~> 2.4)
+      mail
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -56,6 +59,9 @@ GEM
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
+    email_spec (1.6.0)
+      launchy (~> 2.1)
+      mail (~> 2.2)
     erubis (2.7.0)
     execjs (2.2.2)
     factory_girl (4.5.0)
@@ -183,9 +189,11 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  capybara-email
   coffee-rails (~> 4.0.0)
   devise
   dotenv-rails
+  email_spec
   factory_girl_rails
   foundation-rails
   jbuilder (~> 2.0)
